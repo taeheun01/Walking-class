@@ -1,0 +1,121 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+
+
+
+
+
+
+
+.title {
+  padding: 50px;
+  
+  color: white;
+  text-align: center;
+  font-size: 60px;
+  text-shadow: -3px 0px black, 0px 3px black, 3px 0px black, 0px -3px black;
+  
+  
+}
+.searchArea {
+  text-align: center;
+  
+}
+
+.base {
+background-color: black;
+}
+
+.searchinput {
+  padding: 10px;
+  text-align: center;
+}
+
+
+.input {
+  
+  
+  
+  text-align: center;
+  background-color: #ffffff;
+  font-size: 20px;
+  color: black;
+  
+  border-width: 0px;
+}
+
+.searchButton {
+  
+  font-size: 20px;
+  color: white;
+  background-color: black;
+  border-width: 0px;
+}
+
+*{
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#wrap {
+  
+  padding: 50px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); 
+  gap: 20px; 
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  position: relative;
+}
+
+.cardList {
+  
+  width: 100%;
+}
+.card_box{
+  
+  width: 100%;
+  height: 350px;
+  background: #FED6E3;
+  transition: .5s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+.card_box div{
+  font-size: 15px;
+  width: 100%;
+  height: 100%;
+  line-height: 350px;
+  text-align: center;
+  position: absolute;
+  backface-visibility: hidden;
+  
+  
+}
+.back{
+  
+  text-align: center; 
+  transform: rotateY(180deg);
+  background: black;
+  color: #fff;
+}
+.card:hover .card_box{
+  transform: rotateY(180deg);  
+}
+
+.image-box {
+  width:380px;
+  height:220px;
+  overflow:hidden;
+  margin:0 auto;
+}
+
+.image-thumbnail {
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
